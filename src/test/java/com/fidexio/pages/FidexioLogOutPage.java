@@ -9,7 +9,6 @@ public class FidexioLogOutPage {
 
     public FidexioLogOutPage(){
         PageFactory.initElements(Driver.getDriver(), this);
-
     }
 
     @FindBy(xpath = "//span[@class='oe_topbar_name']")

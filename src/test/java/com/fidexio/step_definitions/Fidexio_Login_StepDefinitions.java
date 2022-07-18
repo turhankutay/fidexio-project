@@ -50,7 +50,6 @@ public class Fidexio_Login_StepDefinitions {
         String expectedTitle = "Odoo";
         Assert.assertEquals(expectedTitle, actualTitle);
 
-
     }
 
     @Then("The user should see the Wrong login password alert on the page")
@@ -63,12 +62,9 @@ public class Fidexio_Login_StepDefinitions {
     @Then("User should see Please fill out this field. message on password input")
     public void userShouldSeeMessage() {
 
-
-
         String actualMessage2 = fidexioLoginPage.passwordInput.getAttribute("validationMessage");
         String expectedMessage2 = "Please fill in this field.";
         Assert.assertEquals(expectedMessage2, actualMessage2);
-
 
     }
 
@@ -79,7 +75,6 @@ public class Fidexio_Login_StepDefinitions {
         String expectedMessage = "Please fill in this field.";
         Assert.assertEquals(expectedMessage,actualMessage);
 
-
     }
 
     @When("User clicks reset password link")
@@ -88,8 +83,6 @@ public class Fidexio_Login_StepDefinitions {
         fidexioLoginPage.resetPasswordLink.click();
 
     }
-
-
 
     @Then("User should land reset password page and should see Reset Password text")
     public void userShouldLandResetPasswordPageAndShouldSeeResetPasswordText() {
@@ -115,5 +108,4 @@ public class Fidexio_Login_StepDefinitions {
         fidexioLoginPage.passwordInput.sendKeys(Keys.ENTER);
 
     }
-
 }

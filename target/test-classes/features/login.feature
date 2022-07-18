@@ -10,7 +10,7 @@ Feature: Fidexio Login Functionality
   Background: The user should be on the login page to be able to use the features on the feature page.
     Given User is on the login page
 
-  @FIDEXI-524 
+  @FIDEXI-524
   Scenario Outline: US-001 | TC-001 | Verify that Users can log in with valid credentials
     When User enters username "<username>"
     And User enters password "<password>"

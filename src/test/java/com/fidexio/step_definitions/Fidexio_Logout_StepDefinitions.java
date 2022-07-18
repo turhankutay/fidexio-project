@@ -16,7 +16,6 @@ public class Fidexio_Logout_StepDefinitions {
     FidexioLoginPage fidexioLoginPage = new FidexioLoginPage();
     FidexioLogOutPage fidexioLogOutPage = new FidexioLogOutPage();
 
-
     @Given("User is on the homepage after login with valid credentials.")
     public void userIsOnTheHomepageAfterLoginWithValidCredentials() {
 
@@ -25,9 +24,7 @@ public class Fidexio_Logout_StepDefinitions {
         fidexioLoginPage.usernameInput.sendKeys("posmanager15@info.com");
         fidexioLoginPage.passwordInput.sendKeys("posmanager" + Keys.ENTER);
 
-
     }
-
 
     @When("the user clicks on the username in the upper right corner")
     public void theUserClicksOnTheUsernameInTheUpperRightCorner() {

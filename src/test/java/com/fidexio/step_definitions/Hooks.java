@@ -13,7 +13,6 @@ public class Hooks {
 
         //scenario.isFailed() --> if scenario fails this method will return TRUE boolean value
 
-
         if (scenario.isFailed()){
 
             byte [] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
@@ -21,11 +20,7 @@ public class Hooks {
 
         }
 
-
-        //BrowserUtils.sleep(5);
         Driver.closeDriver();
 
-        //System.out.println("====Closing browser using cucumber @After");
-        //System.out.println("====Scenario ended/ Take screenshot if failed!");
     }
 }
